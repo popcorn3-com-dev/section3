@@ -114,7 +114,7 @@
 // sumFunc(arr1[0], arr1[1]);
 // sumFunc(...arr1);
 
-const arr2 = [1, 2,3,4,5];
+const arr2 = [1, 2, 3, 4, 5];
 const [num1, num2, ...arr3] = arr2;
 console.log(num1);
 console.log(num2);
