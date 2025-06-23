@@ -123,12 +123,16 @@
 // console.log(arr3);
 
 //配列のコピー、結合
-const arr4 = [10, 20];
-const arr5 = [30, 40];
+// const arr4 = [10, 20];
+// const arr5 = [30, 40];
 
-const arr6 = [...arr4];
-console.log(arr6);
+// const arr6 = [...arr4];
+// console.log(arr6);
 
-const arr7 = [...arr4, ...arr5]
-console.log(arr7);
+// const arr7 = [...arr4, ...arr5]
+// console.log(arr7);
+
+//-------------------------------------------------
+// mapやfilterを使った配列の処理
+//-------------------------------------------------
 
