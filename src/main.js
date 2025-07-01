@@ -107,8 +107,8 @@
 // スプレッド構文 ...
 //-------------------------------------------------
 // const arr1 = [1, 2];
-// // console.log(arr1);
-// // console.log(...arr1);
+// console.log(arr1);
+// console.log(...arr1);
 
 //配列の展開
 // const sumFunc = (num1, num2) => console.log(num1 + num2);
@@ -136,3 +136,27 @@
 // mapやfilterを使った配列の処理
 //-------------------------------------------------
 
+const nameArr = ['田中', '山田', '鈴木'];
+// for (let index = 0; index < nameArr.length; index++) {
+//     console.log(nameArr[index], index)
+
+// }
+// const nameArr2 = nameArr.map((name, index) => {
+//     return `${name}さんは${index + 1}番目です`;
+// });
+// console.log(nameArr2)
+
+// const numArr = [1, 2, 3, 4, 5];
+// const newNumArr = numArr.filter((num) => {
+//     return num % 2 === 1;
+// })
+// console.log(newNumArr)
+
+const nameSan = nameArr.map((name) => {
+    if (name === '鈴木') {
+        return name;
+    } else {
+        return `${name}さん`
+    }
+})
+console.log(nameSan)
