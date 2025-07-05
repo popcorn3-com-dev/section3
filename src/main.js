@@ -174,7 +174,39 @@
 // const formatteNum = typeof num === 'number' ? num.toLocaleString() : num;
 // console.log(formatteNum)
 
-const checkSum = (num1, num2) => {
-    return num1 + num2 > 100 ? '100以上です' : '100未満です';
+// const checkSum = (num1, num2) => {
+//     return num1 + num2 > 100 ? '100以上です' : '100未満です';
+// }
+// console.log(checkSum(10, 2));
+
+//-------------------------------------------------
+// 論理演算子の本当の意味を知ろう && ||
+//-------------------------------------------------
+//truthy,falsyについて
+//'ABC' 0 10 undefined null false NaN '' [] {}
+// const val = 'ABC';
+// if (val) {
+//     console.log(`${val}はtruthyです`)
+// } else {
+//     console.log(`${val}はfalsyです`)
+// }
+
+const flag1 = true;
+const flag2 = false;
+
+if (flag1 || flag2) {
+    console.log('1か2はtrueです')
 }
-console.log(checkSum(10, 2));
+if (flag1 && flag2) {
+    console.log('1も2もtrueです')
+}
+
+// || は左側がtruthyの時その時点で返却する
+const num = null;
+const fee = num || '金額未設定です';
+console.log(fee);
+
+// && は左側がfalsyの時その時点で返却する
+const num2 = 100;
+const fee2 = num2 && '何か設定されました';
+console.log(fee2);
