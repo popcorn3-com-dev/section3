@@ -136,7 +136,7 @@
 // mapやfilterを使った配列の処理
 //-------------------------------------------------
 
-const nameArr = ['田中', '山田', '鈴木'];
+// const nameArr = ['田中', '山田', '鈴木'];
 // for (let index = 0; index < nameArr.length; index++) {
 //     console.log(nameArr[index], index)
 
@@ -152,11 +152,29 @@ const nameArr = ['田中', '山田', '鈴木'];
 // })
 // console.log(newNumArr)
 
-const nameSan = nameArr.map((name) => {
-    if (name === '鈴木') {
-        return name;
-    } else {
-        return `${name}さん`
-    }
-})
-console.log(nameSan)
+// const nameSan = nameArr.map((name) => {
+//     if (name === '鈴木') {
+//         return name;
+//     } else {
+//         return `${name}さん`
+//     }
+// })
+// console.log(nameSan)
+
+//-------------------------------------------------
+// 三項演算子
+//-------------------------------------------------
+//ある条件 ? trueの時 : falseの時
+// const val1 = 1 > 0 ? true : false;
+// console.log(val1)
+
+// const num = 1300;
+// console.log(num.toLocaleString());
+
+// const formatteNum = typeof num === 'number' ? num.toLocaleString() : num;
+// console.log(formatteNum)
+
+const checkSum = (num1, num2) => {
+    return num1 + num2 > 100 ? '100以上です' : '100未満です';
+}
+console.log(checkSum(10, 2));
